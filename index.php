@@ -1,3 +1,7 @@
+<?php 
+
+define('INDEX', true);
+?>
 <!doctype html>
 <html lang="en">
  `<head>
@@ -7,6 +11,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
  </head>
  <body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <h1 class="text-center">Aplikasi To-Do List</h1>
  <!-- Form Kegiatan -->
  <form action="insert.php" method="post" class="mt-3">
@@ -23,7 +46,7 @@
 
 
  <!-- Tampil Nama Kegiatan + Tindakan -->
- <h4>Kegiatan</h4>
+ <h4 class="mt-3 text-center">Kegiatan</h4>
  <table class="table">
   <thead>
     <tr>
