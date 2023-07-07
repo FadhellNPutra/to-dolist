@@ -1,4 +1,4 @@
-1. index.php 95%
 4. pesan commit adalah pesan yang harus dikerjakan
-5. login, logout, register dikerjakan
-6. 
+6. CRUD kerjakan
+
+NB : file konten berfungsi untuk route get crudnya

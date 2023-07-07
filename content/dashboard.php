@@ -5,7 +5,7 @@
 
 
 <h4 class="mt-3 text-center">Kegiatan</h4>
- <table class="table">
+<table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
