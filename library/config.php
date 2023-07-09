@@ -2,7 +2,7 @@
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $db="to-do-list";
+    $db="todolist";
 
     $con = mysqli_connect($host, $user, $pass, $db);
 

@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="?hal=dashboard">Dashboard</a>
+              <a class="nav-link active" href="index.php">Dashboard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="logout.php">Logout</a>
@@ -42,10 +42,10 @@
 
     <h1 class="text-center">Aplikasi To-Do List</h1>
  <!-- Form Kegiatan -->
- <form action="insert.php" method="post" class="mt-3">
+ <form action="?hal=insert" method="post" class="mt-3">
     <div class="row">
         <div class="col">
-            <input type="text" class="form-control shadow-sm p-3 mb-5 bg-body-tertiary rounded" placeholder="Masukkan Kegiatan">
+            <input type="text" class="form-control shadow-sm p-3 mb-5 bg-body-tertiary rounded" placeholder="Masukkan Kegiatan" name="kegiatan">
         </div>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Kirim</button>
@@ -56,7 +56,8 @@
 
 
  <!-- Tampil Nama Kegiatan + Tindakan -->
- <h4 class="mt-3 text-center">Kegiatan</h4>
+ <?php include "konten.php"; ?>
+ <?php /*<h4 class="mt-3 text-center">Kegiatan</h4>
  <table class="table">
   <thead>
     <tr>
@@ -82,7 +83,7 @@
     </tr>
     <?php 
       }
-    ?>
+    ?>*/?>
   </tbody>
 </table>
  <!-- Tampil Nama Kegiatan + Tindakan End -->
